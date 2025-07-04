@@ -1,0 +1,16 @@
+{
+  "appointments": [
+    {
+      "id": "b47a"
+    },
+    {
+      "id": "0025",
+      "namePet": "Rony",
+      "nameOwner": "Santiago Andrés Comas Durán",
+      "phone": "323343443",
+      "date": "2025-07-18",
+      "time": "12:00am",
+      "description": "fiebre"
+    }
+  ]
+}

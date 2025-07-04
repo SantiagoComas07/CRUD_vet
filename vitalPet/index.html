@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="description" content="Data_management is an online store that offer options to add, show and delete products in the inventary">
+    <meta name="keywords" content="Sales, products, cost, management">
+    <meta name="sitedomain" content="https://github.com/SantiagoComas07">  
+    <meta name="organization" content="SantiagoComas07">
+    <meta name="author" content="Santiago andrés Comas Durán">
+    <meta name="designer" content="Santiago andrés Comas Durán">
+    <meta name="copyright" content="© 2025 SantiagoComas07. All rights reserved">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="15days">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./public/img/Logo.png" alt="Logo"  class="d-inline-block align-text-to img_nav">
+              vitalVet
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#appointment_id">Appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid" id="home">
+        <section class="mt-5 rounded-1 bg-light">
+          <form action="" class="container row g-3 p-2" id="form">
+            <div class="form-floating col-sm-12 col-lg-6 col-xl-4">
+              <input type="text" class="form-control" id="name_pet"  placeholder="name@example.com">
+              <label for="floatingInput" class="text-secondary">Pet's name</label>
+            </div>
+            <div class="form-floating col-sm-12 col-lg-6 col-xl-4">
+              <input type="text" class="form-control" id="name_person"  placeholder="Password">
+              <label for="floatingPassword" class="text-secondary">Name</label>
+            </div>
+            <div class="form-floating col-sm-12 col-lg-6 col-xl-4">
+              <input type="number" class="form-control" id="phone_person"  placeholder="Password">
+              <label for="floatingPassword" class="text-secondary">Phone</label>
+            </div>
+            <div class="form-floating col-sm-12 col-lg-6 col-xl-4">
+              <input type="date" class="form-control" id="date_cite"  placeholder="Password">
+              <label for="floatingPassword" class="text-secondary">Date</label>
+            </div>
+            <div class="form-floating col-sm-12 col-lg-6 col-xl-4">
+              <input type="datetime" class="form-control" id="time_cite"  placeholder="Password">
+              <label for="floatingPassword" class="text-secondary">Time</label>
+            </div>
+            <div class="form-floating col-sm-12 col-lg-6 col-xl-4">
+              <textarea class="form-control" placeholder="Leave a comment here" id="description" style="height: 100px"></textarea>
+              <label for="floatingTextarea2" class="text-secondary">Comments</label>
+            </div>
+            <div class="col-12 col-lg-6">
+              <button type="submit" class="btn btn-primary w-100 rounded-1">Send</button>
+            </div>
+          </form>
+        </section>
+        <section class="container-fluid mt-5 mb-4" id="appointment_id">
+          <div class="row" id="cardContainer">
+            <div class="col-sm-6 mb-3 mb-sm-0" >
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Appointment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    </main>
+    <footer></footer>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
