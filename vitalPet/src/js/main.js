@@ -36,8 +36,11 @@ $form.addEventListener("submit", async function (event) {
   editingId = null;
 });
 
+
+// Here i have a function that add new appointments
 async function createAppointment() {
-  const newAppointment = {
+ // This is my object of information, i add this information in my file.Json
+    const newAppointment = {
     namePet: $namePet.value,
     namePerson: $namePerson.value,
     phone: $phonePerson.value,
@@ -46,8 +49,9 @@ async function createAppointment() {
     description: $description.value
   };
 
-  try {
-    let response = await fetch(endPointAppointments, {
+  //Evitar que el programa se rompa
+   try {
+    const response = await fetch(endPointAppointments, {
       method: "POST",
       headers: {
         "content-type": "application/json"
@@ -62,10 +66,12 @@ async function createAppointment() {
       alertSuccess("Cita agendada");
       return newAppointment;
     }
+
   } catch (error) {
     console.log(error.message);
   }
 };
+
 
 async function updateAppointment(id) {
   const updatedAppointment = {
@@ -79,7 +85,8 @@ async function updateAppointment(id) {
 
   try {
     const response = await fetch(`${endPointAppointments}/${id}`, {
-      method: "PUT",
+      
+        method: "PUT", 
       headers: {
         "Content-Type": "application/json"
       },
