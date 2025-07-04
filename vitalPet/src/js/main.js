@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   showCards(dato);
 });
 
+// Here i add a function when i use the button submit in the form
 $form.addEventListener("submit", async function (event) {
   event.preventDefault();
 
