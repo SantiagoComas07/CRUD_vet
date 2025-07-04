@@ -36,7 +36,7 @@
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#appointment_id">Appointment</a>
+                <a class="nav-link" href="#appointment_id">Appointments</a>
               </li>
             </ul>
           </div>
@@ -45,7 +45,7 @@
     </header>
     <main class="container-fluid" id="home">
         <section class="mt-5 rounded-1 bg-light">
-          <form action="" class="container row g-3 p-2" id="form">
+          <form action="" class="container row g-3 p-2 mx-auto" id="form">
             <div class="form-floating col-sm-12 col-lg-6 col-xl-4">
               <input type="text" class="form-control" id="name_pet"  placeholder="name@example.com">
               <label for="floatingInput" class="text-secondary">Pet's name</label>
@@ -70,30 +70,20 @@
               <textarea class="form-control" placeholder="Leave a comment here" id="description" style="height: 100px"></textarea>
               <label for="floatingTextarea2" class="text-secondary">Comments</label>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-4">
               <button type="submit" class="btn btn-primary w-100 rounded-1">Send</button>
             </div>
           </form>
         </section>
-        <section class="container-fluid mt-5 mb-4" id="appointment_id">
-          <div class="row" id="cardContainer">
-            <div class="col-sm-6 mb-3 mb-sm-0" >
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Appointment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
+        <section class="container-fluid mb-4 mt-10rem p-5 row" id="appointment_id">
+          <div id="cardContainer">
           </div>
         </section>
-
     </main>
-    <footer></footer>
+    <footer class="container-fluid bg-primary d-flex justify-content-center p-5 foot">
+      <p class="text-white">Hello world</p>
+
+    </footer>
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
