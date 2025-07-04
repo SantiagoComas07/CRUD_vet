@@ -2,6 +2,7 @@ import '../scss/styles.scss';
 import * as bootstrap from 'bootstrap'
 import { alertError, alertSuccess } from './alerts';
 
+//Here I have my elements called from HTML
 const endPointAppointments = "http://localhost:3000/appointments"
 const $namePet = document.getElementById("name_pet");
 const $namePerson = document.getElementById("name_person");
@@ -11,6 +12,7 @@ const $timeCite = document.getElementById("time_cite");
 const $description = document.getElementById("description");
 const $form = document.getElementById("form");
 
+//I have some guide variables here.
 let isEditing = false;
 let editingId = null;
 
@@ -49,7 +51,7 @@ async function createAppointment() {
     description: $description.value
   };
 
-  //Evitar que el programa se rompa
+  //  try Prevent the program from breaking  
    try {
     const response = await fetch(endPointAppointments, {
       method: "POST",
@@ -72,7 +74,7 @@ async function createAppointment() {
   }
 };
 
-
+// Here I update the information using id.
 async function updateAppointment(id) {
   const updatedAppointment = {
     namePet: $namePet.value,
@@ -105,12 +107,14 @@ async function updateAppointment(id) {
   }
 }
 
+
+// Here I delete the information using id.
 async function deleteAppointment(id) {
   try {
     const response = await fetch(`${endPointAppointments}/${id}`, {
       method: 'DELETE',
     });
-
+    //Here I have a condition to determine if the information was deleted correctly
     if (!response.ok) {
       throw new Error("No se pudo eliminar la cita.");
     }
@@ -140,6 +144,7 @@ function showCards(dato) {
     const card = document.createElement("div");
     card.className = "col-12 col-md-6 col-lg-4"
 
+    //To display information it is necessary to have HTML code.
     card.innerHTML = `
       <div class="card h-100 ">
         <div class="card-body">
@@ -157,9 +162,12 @@ function showCards(dato) {
         </div>
       </div>
     `;
+    //Here i add the information to the container in my HTML document.
     container.appendChild(card);
   });
 
+
+//Here I have the code to select the edit and delete buttons in my HTML document and give them functionality..
   document.querySelectorAll(".delete-btn").forEach(button => {
     button.addEventListener("click", async (e) => {
       e.preventDefault();
